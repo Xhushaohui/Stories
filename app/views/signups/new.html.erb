@@ -1,0 +1,25 @@
+<div class= "signup-main main">
+  <div class="content container">
+
+     <h1>
+      Get the latest updates from Stories
+    </h1>
+      <div class="row">
+        <div class="col-md-4">
+          
+        </div>
+        <div class="col-md-4">
+        <%= form_for(@signup) do |f| %>
+    
+        <%= f.label "Firstname" %><br>
+        <%= f.text_field :firstname %><br>
+        <%= f.label "Email" %><br>
+        <%= f.text_field :email %><br>
+        <%= f.submit "join",class:"btn" %>
+
+     		 <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
