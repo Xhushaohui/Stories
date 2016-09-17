@@ -1,24 +1,14 @@
-<div class= "menu">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-    <img class= "icon-close" src="https://s3.amazonaws.com/codecademy-content/projects/z2d/stories/close-white.svg">
-  </ul>
-</div>
-
-<div class = "home-main">
-  <img class= "icon-menu" src="https://s3.amazonaws.com/codecademy-content/projects/z2d/stories/menu-white.svg">
+<div class = "home-main main">
   <div class = "container">
     <div class = "row">
       <div class = "content col-md-6  col-md-offset-6">
         <h1>Create and share Stories</h1>
-    <a class = "btn btn-primary" href="#">Learn more</a>
+        <%= link_to "Learn more",about_path, class: "btn btn-primary" %>
       </div>
     </div>
   </div>
 </div>
-<div class = "home-supporting">
+<div class = "home-supporting supporting">
   <div class= "container">
     <h2>
       Relive and share your adventures
@@ -36,14 +26,7 @@
     <h2>
     Discover Stories
   </h2>
-  <a class="btn btn-primary" href="#">Learn more</a>
+  <%= link_to "Learn more",about_path, class: "btn btn-primary" %>
 </div>
   </div>
   
-<div class = "footer">
-  <div class= "container">
-    <p>
-    A SHUTTERBUGG PROJECT
-  </p>
-  </div>
-</div>

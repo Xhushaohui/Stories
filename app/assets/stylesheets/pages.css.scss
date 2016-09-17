@@ -1,10 +1,29 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+      color: #fff;
+      font-weight: 200;
+      font-size: 5em;
+      text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+      margin-bottom: 30px;
+    }
 h2{
     font-size: 3em;
     font-weight: 200;
     margin: 30px 0;
+}
+p{
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+}
+.icon-menu{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 24px;
+    cursor: pointer;
 }
 .btn{
   background-color: #2E72BD;
@@ -12,43 +31,27 @@ h2{
   border-radius: 0;
   font-size: 16px;
   padding: 12px 26px;
+  margin-top: 20px;
   &:hover {
     background-color: #286090;
     transition: background-color,.5s;
   }
 }
-.home-main {
-  height: 700px;
-  background: url("https://hd.unsplash.com/photo-1425342605259-25d80e320565") no-repeat center center;
-  background-size: cover;
-  .icon-menu{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 24px;
-    cursor: pointer;
-  }
-  .content{
+.main {
+ 	  height: 700px;
+    .content{
     position: relative;
     top: 150px;
     text-align: center;
-    h1{
-      color: #fff;
-      font-weight: 200;
-      font-size: 5em;
-      text-shadow: 0 2px 3px rgba(0,0,0,0.4);
-      margin-bottom: 30px;
-    }
   }
 }
-.home-supporting {
+.home-main {
+  background: url("https://hd.unsplash.com/photo-1425342605259-25d80e320565") no-repeat center center;
+  background-size: cover;
+}
+.supporting {
   padding: 80px 0;
-  text-align: center;
-  p{
-    font-size: 1.5em;
-    font-weight: 100;
-    letter-spacing: 1.2px;
-  }
+  text-align: center; 
 }
 .home-secondary{
   height: 500px;
@@ -96,4 +99,8 @@ h2{
     cursor: pointer;
     
   }
+}
+.about-main{
+  background: url("https://hd.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg") no-repeat center center;
+  background-size: cover;
 }
